@@ -1,0 +1,99 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+  /* COLORS */
+  --color-rust-orange: #cd562c;
+  --color-rust-copper: #33160f;
+  --color-rust-copper-light: #7F351E;
+  --color-terminal-green: #4af626;
+  --color-amber-light: #ffe120;
+  --color-bg-base: #0f1115;
+  --color-surface: #161920;
+  --color-surface-elevated: #2a2f3d;
+  --color-text-main: #e6e8ec;
+  --color-text-muted: #8b949e;
+  --color-card: #16191e;
+  /* BORDER */
+  --color-border-subtle: #1b2533;
+  /* TYPOGRAPHY */
+  --font-code: 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+  --font-primary: 'Inter', -apple-system, san-serif;
+  /* FONT SIZES */
+  --text-hero: 2.5rem;
+  --text-section-heading: 1.75rem;
+  --text-card-heading: 1.3rem;
+  --text-body-text: 1.15rem;
+  --text-code: 0.95rem;
+  /* SPACING */
+  --spacing-micro: 0.3rem;
+  --spacing-compact: 0.6rem;
+  --spacing-standard: 1rem;
+  --spacing-gutter: 1.8rem;
+  --spacing-block: 2.1rem;
+  --spacing-section: 3rem;
+  /* RADIUS */
+  --radius-primary: 0.4rem;
+  /* MOTION */
+  --animate-primary: cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-terminal-output: 400ms;
+  --animate-hover: 150ms;
+  --animate-content: 250ms;
+  /* INTERACTION */
+  --color-hover: 0 0 15px rgba(205, 86, 44, 0, 15); /* for the buttons */
+  /* CONTAINER */
+  --container-width: 1200px;
+}
+
+:root {
+  --grid-space: 30px;
+}
+
+
+body {
+  background-color: var(--color-bg-base);
+  background-image: linear-gradient(
+      to right,
+      rgba(139, 148, 158, 0.12) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(139, 148, 158, 0.12) 1px, transparent 1px);
+  background-repeat: repeat;
+  background-size: var(--grid-space) var(--grid-space);
+  background-attachment: fixed;
+  font-family: 'Inter', sans-serif;
+  color: #e2e8f0;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 25s linear infinite;
+}
+
+@keyframes spin-slow-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 35s linear infinite;
+}
+
+.font-mono {
+    font-family: var(--font-mono);
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
