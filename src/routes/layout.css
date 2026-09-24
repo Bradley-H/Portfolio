@@ -18,7 +18,7 @@
   /* BORDER */
   --color-border-subtle: #1b2533;
   /* TYPOGRAPHY */
-  --font-code: 'Fira Code', 'JetBrains Mono', Consolas, monospace;
+  --font-code: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
   --font-primary: 'Inter', -apple-system, san-serif;
   /* FONT SIZES */
   --text-hero: 2.5rem;

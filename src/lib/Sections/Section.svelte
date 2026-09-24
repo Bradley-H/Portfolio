@@ -43,18 +43,22 @@
 
                 
     {:else}
-         <div class="text-center max-w-2xl mx-auto space-y-3">
+         <div class="text-center max-w-5xl mx-auto space-y-3">
 
     <div class="font-mono text-rust-500 text-sm">
         <h2 class="font-extrabold text-rust-orange">//0{id}. {section.toUpperCase()}</h2>
     </div>
 
-    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">1
-        <span class="text-rust-orange">2</span>
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">{title1}
+        <span class="text-rust-orange">{title2}</span>
     </h2>
 
+    <div>
+        <h1>{info}</h1>
+    </div>
 
-<!-- {@render children()} -->
+
+{@render children()}
  </div>
     {/if}
 

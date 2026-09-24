@@ -17,6 +17,6 @@
         </span>
     </div>
     <div class="text-xs text-slate-500 font-bold md:text-xl mt-1">
-        {text}
+        <h4>{text}</h4>
     </div>
 </div>

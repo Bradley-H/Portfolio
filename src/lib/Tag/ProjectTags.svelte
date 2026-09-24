@@ -1,0 +1,1 @@
+<span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800 text-sm text-slate-400 font-code">tokio</span>
