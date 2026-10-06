@@ -1,5 +1,8 @@
 <script lang="ts">
     //
+
+    import TimeLineNode from "./TimeLineNode.svelte";
+
 </script>
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
@@ -9,11 +12,9 @@
         <!-- Item 1 -->
         <div class="relative group flex flex-col gap-5">
             <!-- Timeline Node -->
+            <TimeLineNode/>
             <div
-                class="absolute -left- sm:-left-10 top-1.5 w-4 h-4 rounded-full bg-rust-orange border-2 duration-300 border-bg-base group-hover:scale-125 transition-transform"></div>
-
-            <div
-                class="bg-surface border-slate-800 p-6 rounded-xl space-y-3 hover:border-rust-orange border duration-300 transition-colors">
+                class="bg-surface border-slate-800 p-6 rounded-xl space-y-3 border-2 hover:border-rust-orange duration-300 transition-colors">
                 <div
                     class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 font-mono">
                     <h3 class="text-lg font-bold text-white">
@@ -58,8 +59,7 @@
 
          <div class="relative group flex flex-col gap-5">
             <!-- Timeline Node -->
-            <div
-                class="absolute -left- sm:-left-10 top-1.5 w-4 h-4 rounded-full bg-rust-orange border-2 duration-300 border-bg-base group-hover:scale-125 transition-transform"></div>
+            <TimeLineNode/>
 
             <div
                 class="bg-surface border-slate-800 p-6 rounded-xl space-y-3 hover:border-rust-orange border duration-300 transition-colors">
@@ -106,9 +106,7 @@
 
          <div class="relative group flex flex-col gap-5">
             <!-- Timeline Node -->
-            <div
-                class="absolute -left- sm:-left-10 top-1.5 w-4 h-4 rounded-full bg-rust-orange border-2 duration-300 border-bg-base group-hover:scale-125 transition-transform"></div>
-
+            <TimeLineNode/>
             <div
                 class="bg-surface border-slate-800 p-6 rounded-xl space-y-3 hover:border-rust-orange border duration-300 transition-colors">
                 <div

@@ -26,7 +26,7 @@
 
 <div class="flex flex-col gap-5 text-left">
     <TerminalCard/>
-    <div>
+    <div class="flex items-center gap-3 justify-center">
         <ProjectTags/>
         <ProjectTags/>
         <ProjectTags/>

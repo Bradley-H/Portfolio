@@ -99,9 +99,9 @@
 
 
             <!-- first row -->
-            <div class="flex flex-col md:flex-row gap-7">
+            <div class="flex flex-col items-center md:flex-row gap-7">
                  <Card>
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center justify-center md:flex-row gap-7">
             <!-- ICON -->
                     <div class="flex bg-rust-copper border border-rust-orange w-10 h-10 rounded-md justify-center items-center">
                     <i class="fa-solid fa-microchip text-rust-orange text-md"></i>
@@ -130,7 +130,7 @@
             </div>
 
             <!-- Second row -->
-            <div class="flex flex-col mt-7 md:flex-row gap-7 ">
+            <div class="flex flex-col items-center mt-7 md:flex-row gap-7 ">
                      <Card>
             <div class="flex flex-col items-center">
             <!-- ICON -->
@@ -165,16 +165,17 @@
 
 
     <Section  section="Projects" id={2} info={info1} title1="Featured" title2="Projects">
-        <div id="filtered" class="flex justify-center gap-10 mb-10">
+        <div id="filtered" class="grid grid-cols-2 place-items-center sm:flex justify-center gap-5 md:gap-10 my-5">
             <ButtonFiltered text="Any" href="##"/>
             <ButtonFiltered text="Backend" href="##"/>
             <ButtonFiltered text="Systems" href="##"/>
             <ButtonFiltered text="Networking" href="##"/>
         </div>
-        <div class="flex flex-col md:flex-row w-full justify-center items-center gap-5">
+        <div class="grid md:grid-cols-2 justify-center items-center gap-5">
             <ProjectCard name="RustOS" description="Any operating System made with Rust."/>
             <ProjectCard name="RustOS" description="Any operating System made with Rust."/>
             <ProjectCard name="RustOS" description="Any operating System made with Rust."/>
+             <ProjectCard name="RustOS" description="Any operating System made with Rust."/>
         </div>
     </Section>
 

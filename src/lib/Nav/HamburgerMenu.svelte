@@ -14,7 +14,7 @@
 
 <button
   type="button"
-  class="relative z-60 ml-auto shrink-0 flex h-10 w-10 items-center justify-center rounded-md border border-slate-700 bg-slate-900/60 text-slate-200 hover:border-slate-500 hover:text-rust-orange md:hidden"
+  class="relative z-60 ml-auto shrink-0 flex h-10 w-10 items-center justify-center rounded-md border border-slate-700 bg-rust-orange text-slate-200 hover:border-slate-500 hover:text-rust-copper md:hidden"
   aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
   aria-expanded={isOpen}
   onclick={toggleMenu}
