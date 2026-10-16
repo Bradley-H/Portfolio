@@ -30,8 +30,7 @@
             <!-- Main Headline -->
             <div class="space-y-2">
                 <h2
-                    class="font-mono text-rust-orange text-sm sm:text-base tracking-wider uppercase font-bold"
-                >
+                    class="font-mono text-rust-orange text-sm sm:text-base tracking-wider uppercase font-bold">
                     fn get_developer() -> SystemsEngineer
                 </h2>
                 <h1
@@ -66,12 +65,7 @@
                 class="grid grid-cols-3 gap-4 pt-6 border-t-2 border-slate-800 font-mono">
                 <Metrics symbol=">" amount={7} metric="Yrs" text="Experience" />
                 <Metrics symbol=">" amount={40} metric="+" text="Projects" />
-                <Metrics
-                    symbol="<"
-                    amount={1}
-                    metric="ms"
-                    text="Latency Focus"
-                />
+                <Metrics symbol="<" amount={1} metric="ms" text="Latency" />
             </div>
         </div>
     </section>
@@ -175,7 +169,7 @@
             <ProjectCard name="RustOS" description="Any operating System made with Rust."/>
             <ProjectCard name="RustOS" description="Any operating System made with Rust."/>
             <ProjectCard name="RustOS" description="Any operating System made with Rust."/>
-             <ProjectCard name="RustOS" description="Any operating System made with Rust."/>
+            <ProjectCard name="RustOS" description="Any operating System made with Rust."/>
         </div>
     </Section>
 
