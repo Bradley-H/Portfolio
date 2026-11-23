@@ -1,5 +1,6 @@
 <script lang="ts">
     import SectionTemplate from "./SectionTemplate.svelte";
+    import SectionNum from "./SectionNum.svelte";
 
     interface sectionType {
         id: number
@@ -25,7 +26,7 @@
                     <!-- Left Section Title -->
                     <div class="w-full sm:w-2/3">
                         <div class="sticky top-24 space-y-3">
-                            <div class="font-mono text-rust-orange text-sm font-bold">// 0{id}. {section.toUpperCase()}</div>
+                             <SectionNum {id} {section}/>
                             <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
                                 {title1} <span class="text-rust-orange">{title2}</span>
                             </h2>
@@ -35,10 +36,10 @@
                             </p>
                         </div>
                     </div>
-
                     <div>
                     {@render children()}
-                </div></div>
+                </div>
+            </div>
                 </div>
 
                 
@@ -46,7 +47,7 @@
          <div class="text-center max-w-5xl mx-auto space-y-3">
 
     <div class="font-mono text-rust-500 text-sm">
-        <h2 class="font-extrabold text-rust-orange">//0{id}. {section.toUpperCase()}</h2>
+ <SectionNum {id} {section}/>
     </div>
 
     <h2 class="text-3xl sm:text-4xl font-extrabold text-white">{title1}
