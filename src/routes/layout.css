@@ -5,6 +5,7 @@
 @theme {
   /* COLORS */
   --color-rust-orange: #cd562c;
+  --color-rust-light: #123123;
   --color-rust-copper: #33160f;
   --color-rust-copper-light: #7F351E;
   --color-terminal-green: #4af626;
